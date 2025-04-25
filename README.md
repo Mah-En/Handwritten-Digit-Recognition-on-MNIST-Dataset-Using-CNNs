@@ -1,76 +1,94 @@
 
-# 🧠 MNIST Handwritten Digit Recognition Report
+# 🧠 MNIST Handwritten Digit Recognition with CNN
 
-This repository contains a comprehensive LaTeX report that demonstrates how a **Convolutional Neural Network (CNN)** can be used to classify handwritten digits from the **MNIST dataset**.
-
----
-
-## 📄 Contents
-
-- `mnist_report.tex` — Full LaTeX report source.
-- `output.png` — Training loss plot.
-- `output2.png` — Grid of sample MNIST digits with labels.
-- `README.md` — This project overview and documentation.
+This repository provides a complete LaTeX report and supplementary materials for a machine learning project that implements a **Convolutional Neural Network (CNN)** to classify handwritten digits from the **MNIST dataset**.
 
 ---
 
-## 📊 Project Overview
+## 📁 Project Structure
 
-The MNIST dataset is a collection of 28×28 grayscale images of handwritten digits from 0 to 9. This project trains a CNN to classify these digits accurately.
-
-### 🔧 Steps Covered:
-- Data loading and preprocessing
-- CNN architecture design
-- Model training using categorical cross-entropy
-- Visualization of training metrics
-- Display of MNIST examples with labels
+```
+├── mnist_report.tex        # Main LaTeX report source
+├── output.png              # Training loss plot
+├── output2.png             # Grid of MNIST images with labels
+├── README.md               # Project description and instructions
+```
 
 ---
 
-## 🖼️ Sample Visualizations
+## 📖 Project Description
 
-### 🔹 Training Loss Over Epochs
+The MNIST dataset is a benchmark dataset in the field of computer vision and deep learning. It contains 70,000 grayscale images of handwritten digits (60,000 for training and 10,000 for testing), each of size 28x28 pixels.
+
+This project uses a simple yet effective CNN model to classify the digits, and evaluates the model based on training loss and sample predictions.
+
+### 🏗️ Model Architecture
+
+- **Input**: 28x28 grayscale images
+- **Conv2D**: 32 filters, 3x3 kernel, ReLU
+- **MaxPooling2D**: 2x2 pool size
+- **Flatten**
+- **Dense**: 128 units, ReLU
+- **Dense**: 10 units, Softmax
+
+### 🔍 Training Details
+
+- Optimizer: `Adam`
+- Loss Function: `Categorical Cross-Entropy`
+- Epochs: 5–10
+- Batch Size: 128
+- Validation Split: 10%
+
+---
+
+## 📊 Visualizations
+
+### 📉 Training Loss Over Epochs
 
 ![Training Loss](output.png)
 
-> As shown above, the model quickly converges with decreasing loss across 10 epochs.
+The plot shows a sharp decrease in training loss, indicating effective learning over the epochs.
 
-### 🔹 Sample MNIST Digits with Labels
+### 🔢 Sample MNIST Digits
 
-![Sample Digits](output2.png)
+![MNIST Samples](output2.png)
 
-> Each image is labeled with its ground truth value. The dataset includes diverse handwriting styles.
-
----
-
-## 📦 Requirements
-
-To compile the LaTeX report, install any standard LaTeX distribution:
-- [TeX Live](https://www.tug.org/texlive/)
-- [MiKTeX](https://miktex.org/)
+A grid of sample digits from the dataset, annotated with their true labels.
 
 ---
 
-## 🛠️ How to Compile
+## ⚙️ How to Compile the Report
 
-Make sure all files (`mnist_report.tex`, `output.png`, `output2.png`) are in the same directory. Then run:
+To generate the PDF version of the report:
+
+1. Ensure all files are in the same directory.
+2. Run the following command:
 
 ```bash
 pdflatex mnist_report.tex
 ```
 
-This will generate a PDF with all embedded plots and content.
+This will compile the LaTeX file and generate a well-formatted report including the figures above.
 
 ---
 
-## 👤 Author
+## 📦 Requirements
+
+You will need a LaTeX distribution to compile the `.tex` file. Recommended options include:
+
+- [TeX Live](https://www.tug.org/texlive/)
+- [MiKTeX](https://miktex.org/)
+
+---
+
+## ✍️ Author
 
 **Mahla Entezari**  
-*Spring 2024*
+Spring 2024
 
 ---
 
-## 📬 Contact
+## 💬 License and Contribution
 
-Feel free to reach out for questions, improvements, or collaborations!
+Feel free to fork, reuse, or expand on this project. Contributions and suggestions are always welcome!
 
