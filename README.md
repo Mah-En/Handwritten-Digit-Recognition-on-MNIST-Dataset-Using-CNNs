@@ -1,5 +1,5 @@
 
-# 🧠 MNIST Handwritten Digit Recognition with CNN
+#  MNIST Handwritten Digit Recognition with CNN
 
 This repository provides a complete LaTeX report and supplementary materials for a machine learning project that implements a **Convolutional Neural Network (CNN)** to classify handwritten digits from the **MNIST dataset**.
 
@@ -22,7 +22,7 @@ The MNIST dataset is a benchmark dataset in the field of computer vision and dee
 
 This project uses a simple yet effective CNN model to classify the digits, and evaluates the model based on training loss and sample predictions.
 
-### 🏗️ Model Architecture
+###  Model Architecture
 
 - **Input**: 28x28 grayscale images
 - **Conv2D**: 32 filters, 3x3 kernel, ReLU
@@ -49,7 +49,7 @@ This project uses a simple yet effective CNN model to classify the digits, and e
 
 The plot shows a sharp decrease in training loss, indicating effective learning over the epochs.
 
-### 🔢 Sample MNIST Digits
+###  Sample MNIST Digits
 
 ![MNIST Samples](output2.png)
 
@@ -72,7 +72,7 @@ This will compile the LaTeX file and generate a well-formatted report including 
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 You will need a LaTeX distribution to compile the `.tex` file. Recommended options include:
 
@@ -81,7 +81,7 @@ You will need a LaTeX distribution to compile the `.tex` file. Recommended optio
 
 ---
 
-## ✍️ Author
+##  Author
 
 **Mahla Entezari**  
 Spring 2024
