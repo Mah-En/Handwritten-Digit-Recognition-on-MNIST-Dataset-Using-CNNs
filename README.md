@@ -80,12 +80,7 @@ You will need a LaTeX distribution to compile the `.tex` file. Recommended optio
 - [MiKTeX](https://miktex.org/)
 
 ---
-
-##  Author
-
-**Mahla Entezari**  
 Spring 2024
-
 ---
 
 ## 💬 License and Contribution
